@@ -5,6 +5,7 @@ import vuetify from './plugins/vuetify';
 
 import VueRouter from 'vue-router'
 import { routes } from './routes/routes'
+import * as VueGoogleMaps from 'vue2-google-maps'
 
 Vue.config.productionTip = false
 
@@ -24,6 +25,13 @@ const router = new VueRouter({
       return { x: 0, y: 0 };
     }
   }
+})
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: 'AIzaSyDRYA4kZPf8A9E5E-_Oj7csLiRmppBRSV8',
+    libraries: 'places',
+  },
 })
 
 new Vue({

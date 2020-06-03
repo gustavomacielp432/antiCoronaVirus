@@ -1,5 +1,5 @@
 <template>
-  <v-card width="400" class="mx-auto mt-5">
+  <v-card width="400" class="ma-auto ">
     <v-card-title class="pb-0">
       <h1>Login</h1>
     </v-card-title>
@@ -18,7 +18,7 @@
     <v-divider></v-divider>
     <v-card-actions>
       <v-btn color="success">Register</v-btn>
-      <v-btn color="info">Login</v-btn>
+      <v-btn color="info" @click="login">Login</v-btn>
     </v-card-actions>
   </v-card>
 </template>
@@ -27,6 +27,11 @@ export default {
   data () {
     return {
       showPassword: false
+    }
+  },
+  methods: {
+    login(){
+      this.$router.push({ name: 'hello-world' })
     }
   }
 }
