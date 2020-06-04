@@ -49,7 +49,7 @@ export default {
   methods: {
     setAddress(addressData, placeResultData, id) {
       console.log(addressData);
-      this.currentPlace = placeResultData;
+      console.log(placeResultData)
       console.log(id);
     },
     addMarker() {
