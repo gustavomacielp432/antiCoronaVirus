@@ -6,10 +6,14 @@ import vuetify from './plugins/vuetify';
 import VueRouter from 'vue-router'
 import { routes } from './routes/routes'
 import * as VueGoogleMaps from 'vue2-google-maps'
+import VueResource from 'vue-resource'
+import VueGeolocation from 'vue-browser-geolocation';
 
 Vue.config.productionTip = false
 
 Vue.use(VueRouter)
+Vue.use(VueResource)
+Vue.use(VueGeolocation);
 
 const router = new VueRouter({
   routes,

@@ -35,24 +35,29 @@
   </v-card>
 </template>
 <script>
-
-import GoogleMaps from "./GoogleMaps"
+import GoogleMaps from "./GoogleMaps";
 import VueGoogleAutocomplete from "vue-google-autocomplete";
 export default {
-  components:{
-      GoogleMaps,
-      VueGoogleAutocomplete
+  components: {
+    GoogleMaps,
+    VueGoogleAutocomplete,
   },
+
   data: () => ({
-    destination: '',
-    origin: '',
+    destination: "",
+    origin: "",
     showRoute: false,
     currentPlace: null,
     places: [],
     markers: [],
-    currentAddress: ''
+    currentAddress: "",
   }),
-  methods:{
+
+  mounted() {
+    this.geolocate();
+  },
+
+  methods: {
     setAddress(addressData, placeResultData, id) {
       console.log(addressData);
       this.currentPlace = placeResultData;
@@ -60,23 +65,25 @@ export default {
     },
     addMarker() {
       if (this.currentPlace) {
-        
-        if(!this.origin){
-          this.origin = this.currentPlace
-        }else{
-          this.destination = this.currentPlace;
-          this.showRoute = true
-        }
-        // const marker = {
-        //   lat: this.currentPlace.geometry.location.lat(),
-        //   lng: this.currentPlace.geometry.location.lng(),
-        // };
-        // this.markers.push({ position: marker });
-        // this.places.push(this.currentPlace);
+        this.destination = this.currentPlace;
+        this.showRoute = true;
         this.currentPlace = null;
-        this.currentAddress = ''
+        this.currentAddress = "";
       }
     },
-  }
+    geolocate: function() {
+      this.$getLocation()
+      .then(async coordinates => {
+        this.origin = await this.$http
+        .get(
+          `https://maps.googleapis.com/maps/api/geocode/json?latlng=${coordinates.lat},${coordinates.lng}&key=AIzaSyDRYA4kZPf8A9E5E-_Oj7csLiRmppBRSV8&language=pt-br`
+        )
+        .then((response) => {
+          console.log(response)
+          return response.body.results[0];
+        });
+      });
+    },
+  },
 };
 </script>
