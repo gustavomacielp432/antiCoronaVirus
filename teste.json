@@ -1,0 +1,903 @@
+{
+    "html_attributions": [],
+    "next_page_token": "CqQCHQEAANy6aWf0ierERUs0tMhieTtXhyYYLmY1P9KBijbMNxVfr762GAvZEnMXWiqckcXuF8TctIkA2SyPY9pC63p0IoOGo7ddBn9cS3N1dui7E8vN6mfMjxGgo9okwdsS1vAXbpl1C758h8n1dVrDI4pix0SGXPkpirPj4p7GHMVKOcfgyQpTPWA-naoLQo6FnKNmzS5qTl7Q9I5wP5f5KZ9wPa2zqhcmkmKlSqcKk6aDi76a9i9gGCNcoMIP9oZkUKv5Qe59EzN46LynkBDOEHdIH6s8BCP7MPH2Ono7bSgV7YpfZAn5JffqZNr_38hFe1002O1u80F8MU5MCS6JSjz3KL6aj-UKQiW6DON0NWz0wh3DXl2-0zz1AgXsEL8H647swxIQgo3t8PzGyzPh0fQZEzN-TRoU6TK5NererKnaqZzFfTD9Jp1-2GY",
+    "results": [
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9415024,
+                "lng": -43.9419228
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.94013562010728,
+                   "lng": -43.94064327010728
+                },
+                "southwest": {
+                   "lat": -19.94283527989272,
+                   "lng": -43.94334292989273
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "5f8da2dd376414ba116331a2e4ac072e0b1c1e52",
+          "name": "AHMG - Associação dos Hospitais de Minas Gerais",
+          "opening_hours": {
+             "open_now": true
+          },
+          "place_id": "ChIJExaTaNaZpgAR9bATBsU7ADI",
+          "plus_code": {
+             "compound_code": "3355+96 Santo Antônio, Belo Horizonte - MG",
+             "global_code": "58GR3355+96"
+          },
+          "rating": 3.9,
+          "reference": "ChIJExaTaNaZpgAR9bATBsU7ADI",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 7,
+          "vicinity": "R. Carangola, 225 - Santo Antônio, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9238962,
+                "lng": -43.9527714
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.92271542010728,
+                   "lng": -43.95137752010728
+                },
+                "southwest": {
+                   "lat": -19.92541507989272,
+                   "lng": -43.95407717989272
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "e77d92a413fd654c9f7036cd366713eb88847be0",
+          "name": "Hospital Vera Cruz",
+          "opening_hours": {
+             "open_now": true
+          },
+          "photos": [
+             {
+                "height": 1836,
+                "html_attributions": [
+                   "<a href=\"https://maps.google.com/maps/contrib/105329666961180805851\">Rodrigo Rezende</a>"
+                ],
+                "photo_reference": "CmRaAAAAKCZQA34L9ol1MaOl8unDFCnoy_C5UdlFG3PUnzyNXy9KvvpcoF4UQ65PczNPeZ4LD01golOE6LO2hvp5nMDrHjzX8rnITTkaupbF35gpbEjQVm0ZqA5agw37fHbDVsttEhD3sWiXhgbWgrYZr6sVQOIMGhRp5TKKp8906j33d7U0X7nuYtUN0Q",
+                "width": 3264
+             }
+          ],
+          "place_id": "ChIJ1c3cN12XpgARlwBBV-yILUE",
+          "plus_code": {
+             "compound_code": "32GW+CV Barro Preto, Belo Horizonte - MG",
+             "global_code": "58GR32GW+CV"
+          },
+          "rating": 2.9,
+          "reference": "ChIJ1c3cN12XpgARlwBBV-yILUE",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 303,
+          "vicinity": "Av. Barbacena, 653 - Barro Preto, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9270654,
+                "lng": -43.9441384
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.92564662010728,
+                   "lng": -43.94276992010728
+                },
+                "southwest": {
+                   "lat": -19.92834627989272,
+                   "lng": -43.94546957989272
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "a27b05cbff88cfe0a7fb3be52570b3c1e13a8b67",
+          "name": "Hospital a M H",
+          "place_id": "ChIJBz-u-l-XpgARvwibZDXt4wY",
+          "plus_code": {
+             "compound_code": "33F4+58 Lourdes, Belo Horizonte - MG",
+             "global_code": "58GR33F4+58"
+          },
+          "rating": 5,
+          "reference": "ChIJBz-u-l-XpgARvwibZDXt4wY",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 2,
+          "vicinity": "Lourdes, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9249657,
+                "lng": -43.95081099999999
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.92378562010728,
+                   "lng": -43.94952712010728
+                },
+                "southwest": {
+                   "lat": -19.92648527989272,
+                   "lng": -43.95222677989272
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "b50f9d04a053b1eac60fca3c99628b0a944c573e",
+          "name": "Hospital Universitário Ciências Médicas",
+          "opening_hours": {
+             "open_now": true
+          },
+          "photos": [
+             {
+                "height": 3072,
+                "html_attributions": [
+                   "<a href=\"https://maps.google.com/maps/contrib/101778862564454032195\">A Google User</a>"
+                ],
+                "photo_reference": "CmRaAAAAHq04Za4ZTw-czIeBCyahtAKflY-7dYohLSgxZcD5zMw21BbIJWIsDyTR8-wP1ljP_4HtqpG4JokjOy4Qw2ooZJxkrLDMRZLFfF8nP5An2zhtiiwAY2NkexvyxqZ3D2h7EhCuDQ1XFCHetfYTP_hUf57mGhTz8eyNuiPnRMm5ydDf3rIq2oFVOg",
+                "width": 4096
+             }
+          ],
+          "place_id": "ChIJuTSSnV2XpgARYQanDDG_XMc",
+          "plus_code": {
+             "compound_code": "32GX+2M Santo Agostinho, Belo Horizonte - MG",
+             "global_code": "58GR32GX+2M"
+          },
+          "rating": 4.3,
+          "reference": "ChIJuTSSnV2XpgARYQanDDG_XMc",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 199,
+          "vicinity": "Rua dos Aimorés, 2896 - Santo Agostinho, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.925569,
+                "lng": -43.947102
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.92419672010728,
+                   "lng": -43.94585197010728
+                },
+                "southwest": {
+                   "lat": -19.92689637989272,
+                   "lng": -43.94855162989272
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "1956d081c8f57a4cb9154e919b7e262731b47501",
+          "name": "Dra Claudia Caciquinho",
+          "opening_hours": {
+             "open_now": true
+          },
+          "photos": [
+             {
+                "height": 960,
+                "html_attributions": [
+                   "<a href=\"https://maps.google.com/maps/contrib/117967702529508621924\">A Google User</a>"
+                ],
+                "photo_reference": "CmRaAAAA9I5lywNXX1NkhVF81hBx_qnKIkAm5kIBg8YJE8OGh4yt9jVSjYoWy8ylDv93O2HYHUEJUiPCy1HocSTVxI1P9Cio5bK2aleMUU9xKnBZ9j1s0eD9F3ZRf-z3D4XtLpewEhB-Kz8IiHIv-oKh1wYvcdbrGhRIlQVft02MEU5wQNLlZmfcFFdAzw",
+                "width": 960
+             }
+          ],
+          "place_id": "ChIJt9iGMF2XpgARZhZot4lZpQc",
+          "plus_code": {
+             "compound_code": "33F3+Q5 Santo Agostinho, Belo Horizonte - MG",
+             "global_code": "58GR33F3+Q5"
+          },
+          "rating": 5,
+          "reference": "ChIJt9iGMF2XpgARZhZot4lZpQc",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 1,
+          "vicinity": "R. Rio Grande do Sul, 1137 - Santo Agostinho, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9277621,
+                "lng": -43.9498888
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.92656967010728,
+                   "lng": -43.94836667010727
+                },
+                "southwest": {
+                   "lat": -19.92926932989272,
+                   "lng": -43.95106632989272
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "2bfcfb7a7aef644fab90dc36d125dfa70dc06aac",
+          "name": "Rede Mater Dei de Saúde - Mater Dei Santo Agostinho",
+          "opening_hours": {
+             "open_now": true
+          },
+          "photos": [
+             {
+                "height": 1365,
+                "html_attributions": [
+                   "<a href=\"https://maps.google.com/maps/contrib/108094486802858219565\">Rede Mater Dei de Saúde - Mater Dei Santo Agostinho</a>"
+                ],
+                "photo_reference": "CmRaAAAAbD3s1UlsXFvOsBiGCm2P0cYG3d2o4g6rFbG78DtA2BFrkmoLwQrpHDrLVoSIKXOMsD5YXHWF9hhvXUNTiiRVJlh7exNFZxWVAgoDCxGdk7N0GFhH0wVzBCsjY5Sr2lU9EhDXQGTuaYgcpBf038OrwML2GhQx91cZppZjK2xHOhyUidwzGF1RCA",
+                "width": 2048
+             }
+          ],
+          "place_id": "ChIJbVAFp2eXpgAR_tJTs9rvKbs",
+          "plus_code": {
+             "compound_code": "33C2+V2 Santo Agostinho, Belo Horizonte - MG",
+             "global_code": "58GR33C2+V2"
+          },
+          "rating": 4,
+          "reference": "ChIJbVAFp2eXpgAR_tJTs9rvKbs",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 296,
+          "vicinity": "R. Gonçalves Dias, 2.700 - Santo Agostinho, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9190017,
+                "lng": -43.9534586
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.91761357010728,
+                   "lng": -43.95226732010727
+                },
+                "southwest": {
+                   "lat": -19.92031322989272,
+                   "lng": -43.95496697989272
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "68e218004a70a0fa26f433def1cee8ab72ead042",
+          "name": "Hospital e Maternidade Santa Clara",
+          "place_id": "ChIJeWqqt0SXpgAREdamvuNHogA",
+          "plus_code": {
+             "compound_code": "32JW+9J Barro Preto, Belo Horizonte - MG",
+             "global_code": "58GR32JW+9J"
+          },
+          "rating": 0,
+          "reference": "ChIJeWqqt0SXpgAREdamvuNHogA",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 0,
+          "vicinity": "Rua Tenente Brito Melo, 143 - Barro Preto, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9184698,
+                "lng": -43.9517833
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.91714187010728,
+                   "lng": -43.95043942010727
+                },
+                "southwest": {
+                   "lat": -19.91984152989272,
+                   "lng": -43.95313907989271
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "15df45153347b45a5286458f655d4c8c64752942",
+          "name": "Hospital SOCOR, RUA TUPIS",
+          "opening_hours": {
+             "open_now": true
+          },
+          "photos": [
+             {
+                "height": 3414,
+                "html_attributions": [
+                   "<a href=\"https://maps.google.com/maps/contrib/109916608645153487755\">Rafael Fonseca</a>"
+                ],
+                "photo_reference": "CmRaAAAARP1ChzYq_ozYt9npuzqRAKfXJdch-ThcohwUq7q4UDRNUFqM9OOM0QJca1sPFqCDu6ywcjEI2RLlMfu75Z0RhfcCVK3zK6C5zWkEeP53dDJD228oLDm_CPXiYa7v68HOEhC0itRLmzy3rIqFcWRUKqUSGhRYmxCWVkPr2om0MVPgG7sirHMVxg",
+                "width": 3006
+             }
+          ],
+          "place_id": "ChIJiydH-uKZpgARLh35D8tyVtk",
+          "plus_code": {
+             "compound_code": "32JX+J7 Centro, Belo Horizonte - MG",
+             "global_code": "58GR32JX+J7"
+          },
+          "rating": 4.6,
+          "reference": "ChIJiydH-uKZpgARLh35D8tyVtk",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 9,
+          "vicinity": "Rua dos Tupis, 1578 - Centro, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9505079,
+                "lng": -43.9590185
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.94952707010728,
+                   "lng": -43.95749162010727
+                },
+                "southwest": {
+                   "lat": -19.95222672989272,
+                   "lng": -43.96019127989272
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "1cb04bcbcf0dabf85bfcbc3a66d9017da188ff0e",
+          "name": "Hospital Luxemburgo",
+          "opening_hours": {
+             "open_now": true
+          },
+          "photos": [
+             {
+                "height": 1536,
+                "html_attributions": [
+                   "<a href=\"https://maps.google.com/maps/contrib/118268030420289547342\">A Google User</a>"
+                ],
+                "photo_reference": "CmRaAAAAm92xccXHnvkse9Fx1BE0CsRKaPNLnzbJ3nYfTDTrtU98APZryMsLA8AE00BzyKOX2-AZieBZzAU4wTMDafg7ZGD7rSqo2MOXhI2BHGCRy0Mr-SSWOtKAT9tmSfa93Z4bEhBSgl6rvSUdQbL7MxWdkyKmGhRByoo9aVTA7cOU2YvOsQg9BIMmcw",
+                "width": 2560
+             }
+          ],
+          "place_id": "ChIJJbNmDZqXpgARY0nW-6mFkUU",
+          "plus_code": {
+             "compound_code": "22XR+Q9 Luxemburgo, Belo Horizonte - MG",
+             "global_code": "58GR22XR+Q9"
+          },
+          "rating": 4.1,
+          "reference": "ChIJJbNmDZqXpgARY0nW-6mFkUU",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 221,
+          "vicinity": "R. Gentios, 1350 - Luxemburgo, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9231108,
+                "lng": -43.9569766
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.92171302010728,
+                   "lng": -43.95585877010728
+                },
+                "southwest": {
+                   "lat": -19.92441267989272,
+                   "lng": -43.95855842989272
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "49f4247fd90ae8be67aad9e583bebef4ab0b7e76",
+          "name": "Hospital Felício Rocho",
+          "opening_hours": {
+             "open_now": true
+          },
+          "photos": [
+             {
+                "height": 4128,
+                "html_attributions": [
+                   "<a href=\"https://maps.google.com/maps/contrib/107679502699945040434\">xxx xxx</a>"
+                ],
+                "photo_reference": "CmRaAAAAkY0c-p8YHPBJoCEw-4-_BdvKZ1nDurd6H7QWqQnxiEwOjEHEITQXL0_0WUyNejzvFx5Mc1ytkgdGMyzv_ktUWQQQafoCJ0rmz79xMv3KzK6n2b2RW5RmzuqACrSdflfDEhARw5ErXvJO9xcnkwFMhKIHGhRlDiDStbyKoS76tv1pDJ6XXYTB0g",
+                "width": 3096
+             }
+          ],
+          "place_id": "ChIJ-88BDkKXpgARPx-DOxyZJNM",
+          "plus_code": {
+             "compound_code": "32GV+Q6 Barro Preto, Belo Horizonte - MG",
+             "global_code": "58GR32GV+Q6"
+          },
+          "rating": 3.2,
+          "reference": "ChIJ-88BDkKXpgARPx-DOxyZJNM",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 395,
+          "vicinity": "Av. do Contorno, 9530 - Barro Preto, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9351951,
+                "lng": -43.9488014
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.93374432010728,
+                   "lng": -43.94742452010728
+                },
+                "southwest": {
+                   "lat": -19.93644397989272,
+                   "lng": -43.95012417989273
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "823e379014971e52366d8ad3b209eca7b222a50d",
+          "name": "PHD Pace Hospital",
+          "opening_hours": {},
+          "photos": [
+             {
+                "height": 2368,
+                "html_attributions": [
+                   "<a href=\"https://maps.google.com/maps/contrib/113546412278085829485\">Guilherme Cândido</a>"
+                ],
+                "photo_reference": "CmRaAAAAy23NmfHq86tIBCktvYYvA1L-EvpkwNGJCwkziSwYcRsY5pmHG2NAmCYXG2bFWmdhQ1-Q6D2X6tLXyHm13ltxy_PNDMXXU8jWYbeM6UUTlhM4jlSSqEdpnPnsvV0mKrGuEhDtBwmWQoY1bAUqV5dzMmHzGhT1tCUHWbTrRrtBaRikl1CKe2o1AQ",
+                "width": 4208
+             }
+          ],
+          "place_id": "ChIJ1xE4o_eZpgARgAJI1wp59eg",
+          "plus_code": {
+             "compound_code": "3372+WF Cidade Jardim, Belo Horizonte - MG",
+             "global_code": "58GR3372+WF"
+          },
+          "rating": 3.9,
+          "reference": "ChIJ1xE4o_eZpgARgAJI1wp59eg",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 42,
+          "vicinity": "Av. do Contorno, 7851 - Cidade Jardim, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9235999,
+                "lng": -43.95314
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.92228322010728,
+                   "lng": -43.95184922010728
+                },
+                "southwest": {
+                   "lat": -19.92498287989272,
+                   "lng": -43.95454887989273
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "1430090216dff91899452edaf15b7ff4f57f03de",
+          "name": "Hospital Vera Cruz - Diagnóstico",
+          "opening_hours": {},
+          "place_id": "ChIJe7xuDHWXpgARWvRHLyKLTV8",
+          "plus_code": {
+             "compound_code": "32GW+HP Barro Preto, Belo Horizonte - MG",
+             "global_code": "58GR32GW+HP"
+          },
+          "rating": 1,
+          "reference": "ChIJe7xuDHWXpgARWvRHLyKLTV8",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 1,
+          "vicinity": "Av. Barbacena, 643 - Barro Preto, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9219151,
+                "lng": -43.94637669999999
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.92057667010728,
+                   "lng": -43.94498412010728
+                },
+                "southwest": {
+                   "lat": -19.92327632989272,
+                   "lng": -43.94768377989272
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "db273a6cf428482e5b552419dd3539c015994776",
+          "name": "Hospital bH Mater",
+          "opening_hours": {
+             "open_now": true
+          },
+          "place_id": "ChIJC2e7LlmXpgARnruQuY8df9k",
+          "plus_code": {
+             "compound_code": "33H3+6C Barro Preto, Belo Horizonte - MG",
+             "global_code": "58GR33H3+6C"
+          },
+          "rating": 3,
+          "reference": "ChIJC2e7LlmXpgARnruQuY8df9k",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 6,
+          "vicinity": "R. Rio Grande do Sul, 634 - Barro Preto, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9247462,
+                "lng": -43.95200440000001
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.92349772010727,
+                   "lng": -43.95068522010727
+                },
+                "southwest": {
+                   "lat": -19.92619737989272,
+                   "lng": -43.95338487989272
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "335d0d4fe45371a27bb7fc214d93e91befa03c50",
+          "name": "Hvc Day Hospital",
+          "opening_hours": {},
+          "place_id": "ChIJy4-PLhyXpgARgE4g8-1YfnE",
+          "plus_code": {
+             "compound_code": "32GX+45 Barro Preto, Belo Horizonte - MG",
+             "global_code": "58GR32GX+45"
+          },
+          "rating": 2.3,
+          "reference": "ChIJy4-PLhyXpgARgE4g8-1YfnE",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 3,
+          "vicinity": "Rua dos Aimorés, 3000 - Barro Preto, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9183432,
+                "lng": -43.95210429999999
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.91704297010727,
+                   "lng": -43.95076787010727
+                },
+                "southwest": {
+                   "lat": -19.91974262989272,
+                   "lng": -43.95346752989271
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "6d6a215b26bd2448d5d55b3f4ce2413f5ae8b889",
+          "name": "Clinica SOCOR",
+          "place_id": "ChIJG4i3IVuXpgARvRe4JjAFr84",
+          "plus_code": {
+             "compound_code": "32JX+M5 Barro Preto, Belo Horizonte - MG",
+             "global_code": "58GR32JX+M5"
+          },
+          "rating": 0,
+          "reference": "ChIJG4i3IVuXpgARvRe4JjAFr84",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 0,
+          "vicinity": "Rua dos Tupis, 1612 - Barro Preto, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9190017,
+                "lng": -43.9534586
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.91761357010728,
+                   "lng": -43.95226732010727
+                },
+                "southwest": {
+                   "lat": -19.92031322989272,
+                   "lng": -43.95496697989272
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "7ced8b61d8d377234a41cf706125d5677286335f",
+          "name": "Hospital Santa Genoveva",
+          "place_id": "ChIJeWqqt0SXpgARNh2pgXzuuxM",
+          "plus_code": {
+             "compound_code": "32JW+9J Barro Preto, Belo Horizonte - MG",
+             "global_code": "58GR32JW+9J"
+          },
+          "rating": 0,
+          "reference": "ChIJeWqqt0SXpgARNh2pgXzuuxM",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 0,
+          "vicinity": "Rua Tenente Brito Melo, 143 - Barro Preto, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9373419,
+                "lng": -43.9685677
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.93600807010727,
+                   "lng": -43.96728822010728
+                },
+                "southwest": {
+                   "lat": -19.93870772989272,
+                   "lng": -43.96998787989272
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "680865d831cb81dd02ec073c7fb799f073254702",
+          "name": "Hospital E Maternidade Unimed",
+          "opening_hours": {
+             "open_now": true
+          },
+          "photos": [
+             {
+                "height": 1440,
+                "html_attributions": [
+                   "<a href=\"https://maps.google.com/maps/contrib/102676494044128058341\">A Google User</a>"
+                ],
+                "photo_reference": "CmRaAAAAW3Z9QERpzXPbgtiPodzJGTmjDDtnux1t9QyxxoXvHEnewqu-1yTMBGouExHf5qE-UsYbCLfVdgwDq3UNtBYKuwEJIMPgAo8AdAQc6FS4jfoJOaLG1GsEGjqPRADbv8fUEhAs1-wn1fKnaJ3nDdqfjRGLGhSpxFHu7kkdUlLXMwee0-q3Jh1W0Q",
+                "width": 2560
+             }
+          ],
+          "place_id": "ChIJ_x6c1w6XpgAR_DVIoZLyc0w",
+          "plus_code": {
+             "compound_code": "327J+3H Alto Barroca, Belo Horizonte - MG",
+             "global_code": "58GR327J+3H"
+          },
+          "rating": 5,
+          "reference": "ChIJ_x6c1w6XpgAR_DVIoZLyc0w",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 2,
+          "vicinity": "R. Viamão, 1171 - Alto Barroca, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9506102,
+                "lng": -43.9590036
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.94960797010728,
+                   "lng": -43.95764557010727
+                },
+                "southwest": {
+                   "lat": -19.95230762989272,
+                   "lng": -43.96034522989272
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "295ea0420d4ba4d0879d39aa015c50922db1fa1a",
+          "name": "Hospital Luxemburgo",
+          "place_id": "ChIJRxLN55mXpgAR_yTAHmEDOas",
+          "plus_code": {
+             "compound_code": "22XR+Q9 Luxemburgo, Belo Horizonte - MG",
+             "global_code": "58GR22XR+Q9"
+          },
+          "rating": 0,
+          "reference": "ChIJRxLN55mXpgAR_yTAHmEDOas",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 0,
+          "vicinity": "R. Gentios, 1350 - Luxemburgo, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.926482,
+                "lng": -43.946464
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.92516287010728,
+                   "lng": -43.94501867010728
+                },
+                "southwest": {
+                   "lat": -19.92786252989272,
+                   "lng": -43.94771832989272
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "1e145172122bf619ce1e29ede4190a6b703d9d57",
+          "name": "Bonica Hospital da Plástica BH",
+          "opening_hours": {
+             "open_now": true
+          },
+          "photos": [
+             {
+                "height": 1475,
+                "html_attributions": [
+                   "<a href=\"https://maps.google.com/maps/contrib/108921872045235332508\">Aldo Pereira</a>"
+                ],
+                "photo_reference": "CmRaAAAARPO1b46UjxtZyUCCR9EeZRxWtt3HKOPPtIjN1q01GvEy6qE1HJ08pj8hW1Mzra5EstEUdumf8R9gexJZ4Mlxps2yy0gnrf9KvuV5AOFiG-cNHfTRY84Ygrz4XO_wTRkfEhCeqM9KpzpQOYceSA00vwDwGhQptlZIjH5JsdGvE82EH54GfyXMTg",
+                "width": 1124
+             }
+          ],
+          "place_id": "ChIJTzT1Ll6XpgAR3dCloAn49C8",
+          "plus_code": {
+             "compound_code": "33F3+CC Santo Agostinho, Belo Horizonte - MG",
+             "global_code": "58GR33F3+CC"
+          },
+          "rating": 4.4,
+          "reference": "ChIJTzT1Ll6XpgAR3dCloAn49C8",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 23,
+          "vicinity": "Av. Olegário Maciel, 1412 - Santo Agostinho, Belo Horizonte"
+       },
+       {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+             "location": {
+                "lat": -19.9257707,
+                "lng": -43.9543807
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": -19.92443197010727,
+                   "lng": -43.95298102010728
+                },
+                "southwest": {
+                   "lat": -19.92713162989272,
+                   "lng": -43.95568067989272
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+          "id": "a6e893d6283d9c9bd3a1aa12e1cb81ae213fa599",
+          "name": "Hospital Militar",
+          "place_id": "ChIJ33KZamiXpgARkO9VIhqbZHk",
+          "plus_code": {
+             "compound_code": "32FW+M6 Barro Preto, Belo Horizonte - MG",
+             "global_code": "58GR32FW+M6"
+          },
+          "rating": 5,
+          "reference": "ChIJ33KZamiXpgARkO9VIhqbZHk",
+          "scope": "GOOGLE",
+          "types": [
+             "hospital",
+             "health",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 1,
+          "vicinity": "Rua Juiz de Fora, 900 - Barro Preto, Belo Horizonte"
+       }
+    ],
+    "status": "OK"
+ }
