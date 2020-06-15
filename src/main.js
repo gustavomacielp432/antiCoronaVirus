@@ -8,6 +8,12 @@ import { routes } from './routes/routes'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import VueResource from 'vue-resource'
 import VueGeolocation from 'vue-browser-geolocation';
+import 'font-awesome/css/font-awesome.css'
+
+import './config/bootstrap'
+import './config/msgs'
+
+ 
 
 Vue.config.productionTip = false
 
