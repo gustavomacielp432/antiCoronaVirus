@@ -83,7 +83,7 @@ export default {
       // eslint-disable-next-line no-undef
       new google.maps.Marker({
         position: this.origin.geometry.location,
-        title: "Carro",
+        title: "Origem",
         icon: {
           url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
         },
@@ -92,7 +92,7 @@ export default {
       // eslint-disable-next-line no-undef
       new google.maps.Marker({
         position: this.destination.geometry.location,
-        title: "Garagem",
+        title: "Destino",
         icon: {
           url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
         },
