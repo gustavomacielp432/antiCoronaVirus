@@ -18,7 +18,7 @@
             <ProdutosPages />
           </b-tab>
 
-          <b-tab title="Usuario" active>
+          <b-tab title="Usuario">
             <UsuarioPage />
           </b-tab>
           
