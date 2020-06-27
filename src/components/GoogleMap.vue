@@ -1,6 +1,6 @@
 <template>
   <v-card>
-    <div>
+    <!-- <div>
       <h2>Search and add a pin</h2>
       <label>
         <vue-google-autocomplete
@@ -15,7 +15,7 @@
         <button @click="addMarker">Add</button>
       </label>
       <br />
-    </div>
+    </div> -->
     <br />
     <div class="col-sm-12 col-lg-8 mt-2 px-2">
       <v-card min-height="439px" class="blue h-100">
@@ -36,11 +36,11 @@
 </template>
 <script>
 import GoogleMaps from "./GoogleMaps";
-import VueGoogleAutocomplete from "vue-google-autocomplete";  
+// import VueGoogleAutocomplete from "vue-google-autocomplete";  
 export default {
   components: {
     GoogleMaps,
-    VueGoogleAutocomplete,
+    // VueGoogleAutocomplete,
   },
 
   data: () => ({
