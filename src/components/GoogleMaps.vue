@@ -4,14 +4,8 @@
     <div class="google-map" ref="mapa"></div>
     <div class="legenda py-1 px-2 blue white--text font-weight-medium">
       <div>
-        <img
-          style="height:22px;"
-          src="http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
-        />Destino
-        <img
-          style="height:22px;"
-          src="http://maps.google.com/mapfiles/ms/icons/red-dot.png"
-        />Origem
+        <img style="height:22px;" src="http://maps.google.com/mapfiles/ms/icons/blue-dot.png" />Destino
+        <img style="height:22px;" src="http://maps.google.com/mapfiles/ms/icons/red-dot.png" />Origem
       </div>
       <v-spacer></v-spacer>
       <div>
@@ -26,33 +20,33 @@ export default {
   name: "google-map",
   props: {
     destination: {
-      required: false,
+      required: false
     },
     showRoute: {
-      required: false,
+      required: false
     },
     origin: {
-      required: false,
-    },
+      required: false
+    }
   },
 
   watch: {
     showRoute() {
-      if (this.showRoute) this.marcarMapa();
-    },
+      if (this.showRoute) this.marcarMapa(), this.marcaUsuarioInfectados();
+    }
   },
 
   data: function() {
     return {
       directionsRenderer: null,
       directionsService: null,
-      map: null,
+      map: null
     };
   },
 
   mounted: function() {
     this.initMap();
-    if (this.showRoute) this.marcarMapa();
+    if (this.showRoute) this.marcarMapa(), this.marcaUsuarioInfectados();
   },
 
   methods: {
@@ -61,7 +55,7 @@ export default {
       const options = {
         zoom: 14,
         // eslint-disable-next-line no-undef
-        center: new google.maps.LatLng(-19.9166813, -43.9344931),
+        center: new google.maps.LatLng(-19.9166813, -43.9344931)
       };
       // eslint-disable-next-line no-undef
       this.map = new google.maps.Map(element, options);
@@ -70,9 +64,9 @@ export default {
         polylineOptions: {
           strokeColor: "blue",
           strokeOpacity: 0.7,
-          strokeWeight: 3,
+          strokeWeight: 3
         },
-        suppressMarkers: true,
+        suppressMarkers: true
       });
       // eslint-disable-next-line no-undef
       this.directionsService = new google.maps.DirectionsService();
@@ -85,18 +79,18 @@ export default {
         position: this.origin.geometry.location,
         title: "Origem",
         icon: {
-          url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
+          url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png"
         },
-        map: this.map,
+        map: this.map
       });
       // eslint-disable-next-line no-undef
       new google.maps.Marker({
         position: this.destination.geometry.location,
         title: "Destino",
         icon: {
-          url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
+          url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
         },
-        map: this.map,
+        map: this.map
       });
 
       this.calculateAndDisplayRoute(
@@ -117,7 +111,7 @@ export default {
         {
           origin: origin.formatted_address,
           destination: destination.formatted_address,
-          travelMode: "DRIVING",
+          travelMode: "DRIVING"
         },
         function(response, status) {
           if (status == "OK") {
@@ -130,7 +124,26 @@ export default {
         }
       );
     },
-  },
+
+    //marcaUsuarioInfectados: function (usuarioContaminados) {
+    marcaUsuarioInfectados: function() {
+      //for( var i = 0; i < usuarioContaminados.length; i++ ){
+
+        // eslint-disable-next-line no-undef
+        (marker = new google.maps.Marker({
+          //position: new this.google.maps.Map(usuarioContaminados[i].latitude, usuarioContaminados[i].longitude),
+          position: new this.google.maps.LatLng(-19.960004, -43.965833),
+
+          map: this.map,
+          title: "Infectados",
+          icon: {
+            url: "https://image.flaticon.com/icons/svg/2746/2746582.svg"
+            //url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png"
+          }
+        }));
+      //}
+    }
+  }
 };
 </script>
 
