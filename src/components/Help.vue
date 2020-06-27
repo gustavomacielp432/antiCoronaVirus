@@ -50,9 +50,6 @@ export default {
       ],
     };
   },
-  mounted() {
-    console.log(this.perguntas.cadastro);
-  },
 };
 </script>
 
