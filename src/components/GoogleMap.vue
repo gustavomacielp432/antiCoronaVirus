@@ -79,7 +79,6 @@ export default {
           `https://maps.googleapis.com/maps/api/geocode/json?latlng=${coordinates.lat},${coordinates.lng}&key=AIzaSyDRYA4kZPf8A9E5E-_Oj7csLiRmppBRSV8&language=pt-BR`
         )
         .then((response) => {
-          console.log(response)
           return response.body.results[0];
         });
       });
@@ -92,7 +91,6 @@ export default {
           `https://maps.googleapis.com/maps/api/geocode/json?latlng=${coordinates.lat},${coordinates.lng}&key=AIzaSyDRYA4kZPf8A9E5E-_Oj7csLiRmppBRSV8&language=pt-BR`
         )
         .then((response) => {
-          console.log(response)
           return response.body.results[0];
         });
       });
