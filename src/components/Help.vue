@@ -57,7 +57,7 @@ export default {
         {
           p: "Como é transmitido?",
           r:
-            "A transmissão acontece de uma pessoa doente para outra ou por contato próximo por meio de: Toque do aperto de mão, Gotículas de saliva, Espirro, Tosse, Catarro, Objetos ou superfícies contaminadas, como celulares, mesas, maçanetas, brinquedos, teclados de computador, entre outros."
+            "A transmissão acontece de uma pessoa doente para outra ou contato próximo por meio de: Toque do aperto de mão, Gotículas de saliva, Espirro, Tosse, Catarro, Objetos ou superfícies contaminadas, como celulares, mesas, maçanetas, brinquedos, teclados de computador, entre outros."
         },
         {
           p: "Como se proteger?",
