@@ -20,6 +20,7 @@ export default {
           new MenuModel("Mapa", "mdi-google-maps", "maps"),
         ]),
         new MenuModel("Admin page", "mdi-wrench", "adminPages"),
+        new MenuModel("Help", "mdi-help", "help"),
         new MenuModel("Sair", "mdi-exit-to-app", "login"),
       ];
     },

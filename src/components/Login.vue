@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     login(){
-      this.$router.push({ name: 'hello-world' })
+      this.$router.push({ name: 'maps' })
     }
   }
 }

@@ -36,32 +36,33 @@ export default {
     },
   },
 
-  watch: {
-    showRoute() {
-      if (this.showRoute) this.marcarMapa(), this.marcaUsuarioInfectados();
-    },
-  },
+  // watch: {
+  //   showRoute() {
+  //     if (this.showRoute) this.marcarMapa(), this.marcaUsuarioInfectados();
+  //   },
+  // },
 
   data: function() {
     return {
       directionsRenderer: null,
       directionsService: null,
       map: null,
+      locais: [{lat:-19.960004,lng: -43.965833 }, {lat:-19.9368176,lng: -43.9573218}]
     };
   },
 
-  mounted: function() {
-    this.initMap();
-    if (this.showRoute) this.marcarMapa(), this.marcaUsuarioInfectados();
+  mounted: async function() {
+    await this.initMap();
+    this.marcaUsuarioInfectados();
   },
 
   methods: {
     initMap() {
       const element = this.$refs.mapa;
       const options = {
-        zoom: 14,
+        zoom: 8,
         // eslint-disable-next-line no-undef
-        center: new google.maps.LatLng(-19.9166813, -43.9344931),
+        center: new google.maps.LatLng( -19.8157, -43.9542),
       };
       // eslint-disable-next-line no-undef
       this.map = new google.maps.Map(element, options);
@@ -132,15 +133,17 @@ export default {
     },
 
     marcaUsuarioInfectados() {
-      // eslint-disable-next-line no-undef
-      new google.maps.Marker({
+      this.locais.map((local) => {
         // eslint-disable-next-line no-undef
-        position: new google.maps.LatLng(-19.960929,-43.966196),
-        title: "Destino",
-        icon: {
-          url: "https://anticoronaviruss.s3.amazonaws.com/red_dot.png",
-        },
-        map: this.map,
+        new google.maps.Marker({
+          // eslint-disable-next-line no-undef
+          position: new google.maps.LatLng(local.lat, local.lng),
+          title: "area infectada",
+          icon: {
+            url: "https://anticoronaviruss.s3.amazonaws.com/red_dot.png",
+          },
+          map: this.map,
+        });
       });
     },
   },
