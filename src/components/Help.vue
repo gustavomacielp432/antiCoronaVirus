@@ -82,7 +82,7 @@ export default {
         {
           p: "Existe vacina ou remédios para a Covid-19 (coronavírus)? ",
           r:
-            "Até o momento, não há vacina disponível contra o COVID-19. Contudo já existe tratamento disponível que evita o agravamento da doença e reduz o desconforto mas ainda não há medicamento específico para eliminar o novo coronavírus."
+            "Até o momento, não há vacina disponível contra o COVID-19. Contudo já existe tratamento disponível que evita o agravamento da doença e reduz o desconforto mas ainda não há medicamento específico para eliminar o novo coronavírus. "
         }
       ]
     };
