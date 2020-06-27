@@ -19,8 +19,7 @@ export default {
         new MenuModel("Menu", "mdi-menu", "", [
           new MenuModel("Mapa", "mdi-google-maps", "maps"),
         ]),
-        new MenuModel("Hello World", "mdi-home", "hello-world"),
-        new MenuModel("Admin page", "mdi-settings", "adminPages"),
+        new MenuModel("Admin page", "mdi-wrench", "adminPages"),
         new MenuModel("Sair", "mdi-exit-to-app", "login"),
       ];
     },

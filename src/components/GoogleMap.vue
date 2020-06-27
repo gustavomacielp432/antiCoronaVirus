@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-card>
     <div>
       <h2>Search and add a pin</h2>
       <label>
@@ -8,6 +8,7 @@
           id="map"
           classname="form-control"
           placeholder="Endereço"
+          v-model="currentAddress"
           v-on:placechanged="setAddress"
         >
         </vue-google-autocomplete>
@@ -16,31 +17,41 @@
       <br />
     </div>
     <br />
-    <gmap-map :center="center" :zoom="12" style="width:100%;  height: 400px;">
-      <gmap-marker
-        :key="index"
-        v-for="(m, index) in markers"
-        :position="m.position"
-        @click="center = m.position"
-      ></gmap-marker>
-    </gmap-map>
-  </div>
+    <div class="col-sm-12 col-lg-8 mt-2 px-2">
+      <v-card min-height="439px" class="blue h-100">
+        <v-card-title class="pa-2 blue">
+          <span class="mx-auto font-weight-bold white--text">
+            <v-icon dark>mdi-map</v-icon>
+          </span>
+        </v-card-title>
+        <GoogleMaps
+          :destination="destination"
+          :showRoute="showRoute"
+          :origin="origin"
+        >
+        </GoogleMaps>
+      </v-card>
+    </div>
+  </v-card>
 </template>
 <script>
-import VueGoogleAutocomplete from "vue-google-autocomplete";
+import GoogleMaps from "./GoogleMaps";
+import VueGoogleAutocomplete from "vue-google-autocomplete";  
 export default {
-  name: "GoogleMap",
   components: {
+    GoogleMaps,
     VueGoogleAutocomplete,
   },
-  data() {
-    return {
-      center: { lat: 45.508, lng: -73.587 },
-      markers: [],
-      places: [],
-      currentPlace: null,
-    };
-  },
+
+  data: () => ({
+    destination: "",
+    origin: "",
+    showRoute: false,
+    currentPlace: null,
+    places: [],
+    markers: [],
+    currentAddress: "",
+  }),
 
   mounted() {
     this.geolocate();
@@ -49,27 +60,41 @@ export default {
   methods: {
     setAddress(addressData, placeResultData, id) {
       console.log(addressData);
-      console.log(placeResultData)
+      this.currentPlace = placeResultData;
       console.log(id);
     },
     addMarker() {
       if (this.currentPlace) {
-        const marker = {
-          lat: this.currentPlace.geometry.location.lat(),
-          lng: this.currentPlace.geometry.location.lng(),
-        };
-        this.markers.push({ position: marker });
-        this.places.push(this.currentPlace);
-        this.center = marker;
+        this.destination = this.currentPlace;
+        this.showRoute = true;
         this.currentPlace = null;
+        this.currentAddress = "";
       }
     },
     geolocate: function() {
-      navigator.geolocation.getCurrentPosition((position) => {
-        this.center = {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude,
-        };
+      this.$getLocation()
+      .then(async coordinates => {
+        this.origin = await this.$http
+        .get(
+          `https://maps.googleapis.com/maps/api/geocode/json?latlng=${coordinates.lat},${coordinates.lng}&key=AIzaSyDRYA4kZPf8A9E5E-_Oj7csLiRmppBRSV8&language=pt-BR`
+        )
+        .then((response) => {
+          console.log(response)
+          return response.body.results[0];
+        });
+      });
+    },
+    listaUsario: function() {
+      this.$getLocation()
+      .then(async coordinates => {
+        this.origin = await this.$http
+        .get(
+          `https://maps.googleapis.com/maps/api/geocode/json?latlng=${coordinates.lat},${coordinates.lng}&key=AIzaSyDRYA4kZPf8A9E5E-_Oj7csLiRmppBRSV8&language=pt-BR`
+        )
+        .then((response) => {
+          console.log(response)
+          return response.body.results[0];
+        });
       });
     },
   },
