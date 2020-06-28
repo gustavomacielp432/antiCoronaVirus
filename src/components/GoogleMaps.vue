@@ -19,11 +19,6 @@
       </div>
     </div>
     <v-dialog v-model="visitouAreaRisco" width="600px">
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn color="primary" dark v-bind="attrs" v-on="on">
-          Open Dialog
-        </v-btn>
-      </template>
       <v-card>
         <v-card-title>
           <span class="headline">Potencial risco!</span>
@@ -82,9 +77,29 @@ export default {
     await this.getLastLocais();
     await this.marcaUsuarioInfectados();
     await this.verificaInfeccao();
+    await this.getHospitals();
   },
 
   methods: {
+    async getHospitals() {
+      await this.$getLocation().then(async (coordinates) => {
+        axios
+          .get(`${baseApiUrl}/buscarHospitaisProximos`, { params: coordinates })
+          .then((res) => {
+            res.data.map((hospital) => {
+              // eslint-disable-next-line no-undef
+              new google.maps.Marker({
+                position: hospital.geometry.location,
+                title: hospital.name,
+                icon: {
+                  url: "https://anticoronaviruss.s3.amazonaws.com/hospital.png",
+                },
+                map: this.map,
+              });
+            });
+          });
+      });
+    },
     verificaInfeccao() {
       this.lastLocais.map((lastLocal) => {
         let localInfectadoVisitado = this.locais.filter((element) => {
@@ -110,7 +125,7 @@ export default {
     initMap() {
       const element = this.$refs.mapa;
       const options = {
-        zoom: 8,
+        zoom: 11,
         // eslint-disable-next-line no-undef
         center: new google.maps.LatLng(-19.8157, -43.9542),
       };
@@ -136,7 +151,7 @@ export default {
         position: this.origin.geometry.location,
         title: "Origem",
         icon: {
-          url: "http://maps.google.com/mapfiles/ms/icons/newMark32.png",
+          url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
         },
         map: this.map,
       });
@@ -191,7 +206,7 @@ export default {
           position: new google.maps.LatLng(local.Lat, local.Lng),
           title: "area infectada",
           icon: {
-            url: "https://anticoronaviruss.s3.amazonaws.com/red_dot.png",
+            url: "https://anticoronaviruss.s3.amazonaws.com/newMark32.png",
           },
           map: this.map,
         });

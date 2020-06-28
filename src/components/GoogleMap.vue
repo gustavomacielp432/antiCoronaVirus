@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <div>
-      <h2>Buscar hospital mais próximo</h2>
+      <h2>Buscar local de exame mais próximo</h2>
       <label>
         <!-- <vue-google-autocomplete
           style="width:100%"
@@ -35,6 +35,8 @@
   </v-card>
 </template>
 <script>
+import { baseApiUrl } from "@/global";
+import axios from "axios";
 import GoogleMaps from "./GoogleMaps";
 // import VueGoogleAutocomplete from "vue-google-autocomplete";
 export default {
@@ -58,30 +60,17 @@ export default {
   },
 
   methods: {
-    // setAddress(addressData, placeResultData, id) {
-    //   console.log(addressData);
-    //   this.currentPlace = placeResultData;
-    //   console.log(id);
-    // },
     async goToHospital() {
-      // if (this.currentPlace) {
-      //   this.destination = this.currentPlace;
-      //   this.showRoute = true;
-      //   this.currentPlace = null;
-      //   this.currentAddress = "";
-      // }
-      this.destination = await this.$getLocation().then(async (coordinates) => {
-        return await this.$http
-          .get(
-            `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=AIzaSyDRYA4kZPf8A9E5E-_Oj7csLiRmppBRSV8&language=pt-BR&input=hospital&inputtype=textquery&locationbias=point:${coordinates.lat},${coordinates.lng}&fields=photos,formatted_address,name,rating,opening_hours,geometry`
-          )
-          .then((response) => {
-            return response.candidates[0];
+      await this.$getLocation().then(async (coordinates) => {
+        axios
+          .get(`${baseApiUrl}/buscarHospitalMaisProximo`, { params: coordinates })
+          .then((res) => {
+            this.destination = res.data
+            this.showRoute = true
           });
       });
-      if(this.destination)
-        this.showRoute = true;
     },
+
     geolocate: function() {
       this.$getLocation().then(async (coordinates) => {
         this.origin = await this.$http
