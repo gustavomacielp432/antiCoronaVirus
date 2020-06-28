@@ -27,8 +27,8 @@
 
     <v-expansion-panels focusable>
       <v-expansion-panel v-for="(pergunta, i) in perguntas" :key="i">
-        <v-expansion-panel-header align="center" justify="center">{{ pergunta.p }}</v-expansion-panel-header>
-        <v-expansion-panel-content>{{ pergunta.r }}</v-expansion-panel-content>
+        <v-expansion-panel-header>{{ pergunta.p }}</v-expansion-panel-header>
+        <v-expansion-panel-content justify="center">{{ pergunta.r }}</v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
   </div>
