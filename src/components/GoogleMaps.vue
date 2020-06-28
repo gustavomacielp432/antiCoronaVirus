@@ -36,11 +36,11 @@ export default {
     },
   },
 
-  // watch: {
-  //   showRoute() {
-  //     if (this.showRoute) this.marcarMapa(), this.marcaUsuarioInfectados();
-  //   },
-  // },
+  watch: {
+    showRoute() {
+      if (this.showRoute) this.marcarMapa();
+    },
+  },
 
   data: function() {
     return {

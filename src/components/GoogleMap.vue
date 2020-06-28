@@ -1,9 +1,9 @@
 <template>
   <v-card>
     <div>
-      <h2>Search and add a pin</h2>
+      <h2>Buscar hospital mais próximo</h2>
       <label>
-        <vue-google-autocomplete
+        <!-- <vue-google-autocomplete
           style="width:100%"
           id="map"
           classname="form-control"
@@ -11,8 +11,8 @@
           v-model="currentAddress"
           v-on:placechanged="setAddress"
         >
-        </vue-google-autocomplete>
-        <button @click="addMarker">Add</button>
+        </vue-google-autocomplete> -->
+        <v-btn color="primary" @click="goToHospital">Buscar</v-btn>
       </label>
       <br />
     </div>
@@ -36,18 +36,18 @@
 </template>
 <script>
 import GoogleMaps from "./GoogleMaps";
-import VueGoogleAutocomplete from "vue-google-autocomplete";  
+// import VueGoogleAutocomplete from "vue-google-autocomplete";
 export default {
   components: {
     GoogleMaps,
-    VueGoogleAutocomplete,
+    // VueGoogleAutocomplete,
   },
 
   data: () => ({
     destination: "",
     origin: "",
     showRoute: false,
-    currentPlace: null,
+    // currentPlace: null,
     places: [],
     markers: [],
     currentAddress: "",
@@ -58,41 +58,50 @@ export default {
   },
 
   methods: {
-    setAddress(addressData, placeResultData, id) {
-      console.log(addressData);
-      this.currentPlace = placeResultData;
-      console.log(id);
-    },
-    addMarker() {
-      if (this.currentPlace) {
-        this.destination = this.currentPlace;
+    // setAddress(addressData, placeResultData, id) {
+    //   console.log(addressData);
+    //   this.currentPlace = placeResultData;
+    //   console.log(id);
+    // },
+    async goToHospital() {
+      // if (this.currentPlace) {
+      //   this.destination = this.currentPlace;
+      //   this.showRoute = true;
+      //   this.currentPlace = null;
+      //   this.currentAddress = "";
+      // }
+      this.destination = await this.$getLocation().then(async (coordinates) => {
+        return await this.$http
+          .get(
+            `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=AIzaSyDRYA4kZPf8A9E5E-_Oj7csLiRmppBRSV8&language=pt-BR&input=hospital&inputtype=textquery&locationbias=point:${coordinates.lat},${coordinates.lng}&fields=photos,formatted_address,name,rating,opening_hours,geometry`
+          )
+          .then((response) => {
+            return response.candidates[0];
+          });
+      });
+      if(this.destination)
         this.showRoute = true;
-        this.currentPlace = null;
-        this.currentAddress = "";
-      }
     },
     geolocate: function() {
-      this.$getLocation()
-      .then(async coordinates => {
+      this.$getLocation().then(async (coordinates) => {
         this.origin = await this.$http
-        .get(
-          `https://maps.googleapis.com/maps/api/geocode/json?latlng=${coordinates.lat},${coordinates.lng}&key=AIzaSyDRYA4kZPf8A9E5E-_Oj7csLiRmppBRSV8&language=pt-BR`
-        )
-        .then((response) => {
-          return response.body.results[0];
-        });
+          .get(
+            `https://maps.googleapis.com/maps/api/geocode/json?latlng=${coordinates.lat},${coordinates.lng}&key=AIzaSyDRYA4kZPf8A9E5E-_Oj7csLiRmppBRSV8&language=pt-BR`
+          )
+          .then((response) => {
+            return response.body.results[0];
+          });
       });
     },
     listaUsario: function() {
-      this.$getLocation()
-      .then(async coordinates => {
+      this.$getLocation().then(async (coordinates) => {
         this.origin = await this.$http
-        .get(
-          `https://maps.googleapis.com/maps/api/geocode/json?latlng=${coordinates.lat},${coordinates.lng}&key=AIzaSyDRYA4kZPf8A9E5E-_Oj7csLiRmppBRSV8&language=pt-BR`
-        )
-        .then((response) => {
-          return response.body.results[0];
-        });
+          .get(
+            `https://maps.googleapis.com/maps/api/geocode/json?latlng=${coordinates.lat},${coordinates.lng}&key=AIzaSyDRYA4kZPf8A9E5E-_Oj7csLiRmppBRSV8&language=pt-BR`
+          )
+          .then((response) => {
+            return response.body.results[0];
+          });
       });
     },
   },
