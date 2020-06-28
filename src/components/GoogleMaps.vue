@@ -18,6 +18,28 @@
         <!-- Distância:  -->
       </div>
     </div>
+    <v-dialog v-model="visitouAreaRisco" width="600px">
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn color="primary" dark v-bind="attrs" v-on="on">
+          Open Dialog
+        </v-btn>
+      </template>
+      <v-card>
+        <v-card-title>
+          <span class="headline">Potencial risco!</span>
+        </v-card-title>
+        <v-card-text>
+          Atenção você visitou uma area de risco de infecção nos ultimos dias,
+          favor realizar o exame para verificar possível infecção
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="green darken-1" text @click="visitouAreaRisco = false"
+            >Fechar</v-btn
+          >
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </div>
 </template>
 
@@ -49,20 +71,40 @@ export default {
       directionsRenderer: null,
       directionsService: null,
       map: null,
-      locais: []
+      locais: [],
+      lastLocais: [],
+      visitouAreaRisco: false,
     };
   },
 
   mounted: async function() {
     await this.initMap();
-    this.marcaUsuarioInfectados();
+    await this.getLastLocais();
+    await this.marcaUsuarioInfectados();
+    await this.verificaInfeccao();
   },
 
   methods: {
-    getLocaisContaminacao(){
-      return axios.get(`${baseApiUrl}/casos`)
+    verificaInfeccao() {
+      this.lastLocais.map((lastLocal) => {
+        let localInfectadoVisitado = this.locais.filter((element) => {
+          return element.cep == lastLocal.cep;
+        });
+        if (localInfectadoVisitado.length > 0) {
+          this.visitouAreaRisco = true;
+        }
+      });
+    },
+    getLocaisContaminacao() {
+      return axios.get(`${baseApiUrl}/casos`).then((res) => {
+        return res.data;
+      });
+    },
+    async getLastLocais() {
+      this.lastLocais = await axios
+        .get(`${baseApiUrl}/lastLocaisVisitados`)
         .then((res) => {
-          return res.data
+          return res.data;
         });
     },
     initMap() {
@@ -70,7 +112,7 @@ export default {
       const options = {
         zoom: 8,
         // eslint-disable-next-line no-undef
-        center: new google.maps.LatLng( -19.8157, -43.9542),
+        center: new google.maps.LatLng(-19.8157, -43.9542),
       };
       // eslint-disable-next-line no-undef
       this.map = new google.maps.Map(element, options);
@@ -94,7 +136,7 @@ export default {
         position: this.origin.geometry.location,
         title: "Origem",
         icon: {
-          url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
+          url: "http://maps.google.com/mapfiles/ms/icons/newMark32.png",
         },
         map: this.map,
       });
@@ -141,7 +183,7 @@ export default {
     },
 
     async marcaUsuarioInfectados() {
-      this.locais = await this.getLocaisContaminacao()
+      this.locais = await this.getLocaisContaminacao();
       this.locais.map((local) => {
         // eslint-disable-next-line no-undef
         new google.maps.Marker({
