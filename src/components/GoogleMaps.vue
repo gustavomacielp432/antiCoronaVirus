@@ -22,6 +22,8 @@
 </template>
 
 <script>
+import { baseApiUrl } from "@/global";
+import axios from "axios";
 export default {
   name: "google-map",
   props: {
@@ -47,7 +49,7 @@ export default {
       directionsRenderer: null,
       directionsService: null,
       map: null,
-      locais: [{lat:-19.960004,lng: -43.965833 }, {lat:-19.9368176,lng: -43.9573218}]
+      locais: []
     };
   },
 
@@ -57,6 +59,12 @@ export default {
   },
 
   methods: {
+    getLocaisContaminacao(){
+      return axios.get(`${baseApiUrl}/casos`)
+        .then((res) => {
+          return res.data
+        });
+    },
     initMap() {
       const element = this.$refs.mapa;
       const options = {
@@ -132,12 +140,13 @@ export default {
       );
     },
 
-    marcaUsuarioInfectados() {
+    async marcaUsuarioInfectados() {
+      this.locais = await this.getLocaisContaminacao()
       this.locais.map((local) => {
         // eslint-disable-next-line no-undef
         new google.maps.Marker({
           // eslint-disable-next-line no-undef
-          position: new google.maps.LatLng(local.lat, local.lng),
+          position: new google.maps.LatLng(local.Lat, local.Lng),
           title: "area infectada",
           icon: {
             url: "https://anticoronaviruss.s3.amazonaws.com/red_dot.png",
