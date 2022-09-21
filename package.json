@@ -21,7 +21,7 @@
     "vue-toasted": "^1.1.28",
     "vue2-editor": "^2.10.2",
     "vue2-google-maps": "^0.10.7",
-    "vuetify": "^2.2.31"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "@mdi/font": "^5.3.45",
